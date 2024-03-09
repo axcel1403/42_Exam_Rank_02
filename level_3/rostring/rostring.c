@@ -29,7 +29,7 @@ int	main(int argc, char **argv)
 				write(1, &argv[1][i], 1);
 			i++;
 		}
-		if ((last != 0 && (argv[1][0] != ' ' && argv[1][0] != '\t')) || (flag == 1 && (argv[1][i - 1] != ' ' && argv[1][i - 1] != '\t')))
+		if (flag == 1 && (argv[1][i - 1] != ' ' && argv[1][i - 1] != '\t'))
 			write(1, " ", 1);
 		while (last < end)
 		{
